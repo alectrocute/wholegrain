@@ -26,6 +26,7 @@ We're likely to grab some Android and Windows dev test phones in the near future
 ##### BLE Device Compatability
 
 The configuration is currently setup for an HM10 module. We highly reccomend this cheap, accessable brilliant BLE UART module, produced by Chinese developer  [JNHuaMao](http://www.jnhuamao.cn/bluetooth.asp). **BEWARE** of [knock-off HM10's](http://fab.cba.mit.edu/classes/863.15/doc/tutorials/programming/bluetooth/bluetooth40_en.pdf) being sold and marketed as authentic, which are also widely used/traded under that impression. Here's an [Amazon link (no affiliate code)](https://www.amazon.com/DSD-TECH-Bluetooth-iBeacon-Arduino/dp/B06WGZB2N4/ref=sr_1_1?s=electronics&ie=UTF8&qid=1516232542&sr=1-1&keywords=hm10) to the authentic module.
+
 | BLE Device | Firmware Version | Status | Characteristics (main/rxtx) | Notes |
 | ------ | ------ | ------ | ------ | ------ |
 | HM10¹ | [HM10, 2541, V603](http://www.jnhuamao.cn/rom/HMSoft-10-2541-V603.zip) (latest) | Tested, working and proven | `ffe0` `ffe1` | 🌾

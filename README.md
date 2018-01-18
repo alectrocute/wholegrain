@@ -14,7 +14,9 @@ As of January, 2018 - we're currently in very early development. You are free to
 
 
 ##### Smartphone Compatability
+
 Since we're in very early development, many devices and OS versions are untested. The current development test phone is an iPhone 6 Plus running iOS 11.2.2.
+
 | Device | Notes |
 | ------ | ------ |
 | iOS 11.2.2 | Tested and working |

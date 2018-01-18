@@ -3,7 +3,7 @@
 *wholegrain* is a mobile cross-platform low-energy Bluetooth 4.0 UART serial app with a wide variety of use. It is built on the [Ionic Framework (native)](https://ionicframework.com/docs/) with [Cordova](https://cordova.apache.org/), utilizing [Angular](https://angular.io/) and [@don](https://github.com/don)'s [cordova-plugin-ble-central](https://github.com/don/cordova-plugin-ble-central).
 
 #### Current development status [1.0.0]
-As of Janurary, 2018 - we're currently in very early development. You are free to play around with the source of wholegrain under the [GNU AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) license but **please note** a large majority of this source code is likely to be overwritten or heavily modified on a day-to-day basis. At the current moment, we do not reccomend using this in any product headed to production.
+As of January, 2018 - we're currently in very early development. You are free to play around with the source of wholegrain under the [GNU AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) license but **please note** a large majority of this source code is likely to be overwritten or heavily modified on a day-to-day basis. At the current moment, we do not reccomend using this in any product headed to production.
 
 ##### Current 'Fresh Install' Features
 

@@ -34,7 +34,9 @@ The configuration is currently setup for an HM10 module. We highly reccomend thi
 | BluefruitLE² | [0.7.0](https://github.com/adafruit/Adafruit_BluefruitLE_Firmware/tree/master/0.7.7) (latest) | Untested, unknown and not proven | `?` `?` | Use at own risk.
 
 ¹ Authentic module produced by JNHuaMao
+
 ² Authentic module produced by Adafruit
+
 More devices to be added, tested and proved soon.
 
 #### Getting Started

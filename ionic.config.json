@@ -1,0 +1,8 @@
+{
+  "name": "wholegrain",
+  "app_id": "io.wholegrain.io.app",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

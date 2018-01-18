@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Connected to {{ peripheral.name || 'Device' }} </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="padding">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-icon name="bluetooth" item-start></ion-icon> {{ peripheral.name || 'Unnamed' }}
+    </ion-card-header>
+    <ion-card-content>
+      {{ peripheral.id }}
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-icon name="md-cloud-download" item-start></ion-icon>
+      Data Recieved
+    </ion-card-header>
+    <ion-card-content>
+      <pre>{{ readMessage }}</pre>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small (click)="uiClearDataIn()">
+          <ion-icon name="trash"></ion-icon>
+          <div>Clear</div>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+      <ion-card-header>
+      <ion-icon name="md-cloud-upload" item-start></ion-icon>
+      Send Data
+    </ion-card-header>
+    <ion-card-content>
+        <form [formGroup]="submitForm"  (ngSubmit)="uiDataSubmit()">
+        <ion-item>
+        <ion-label>Message</ion-label>
+        <ion-input type="text" class="form-control" id="submitMessage" formControlName="submitMessage"></ion-input>
+      </ion-item>
+      <ion-item>
+        <button ion-button icon-right type="submit" [disabled]="!submitForm.valid">
+            <ion-icon name="send"></ion-icon>
+          Send
+        </button>
+        </ion-item>
+      </form>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <p>{{ statusMessage }}</p>
+  </ion-toolbar>
+</ion-footer>

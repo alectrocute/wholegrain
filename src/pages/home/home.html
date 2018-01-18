@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            wholegrain
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+ <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingText="Pull to refresh..."
+      refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
+    
+    <ion-list>
+     <ion-list-header>
+      Devices Nearby
+    </ion-list-header>
+    
+        <ion-item ion-item *ngFor="let device of devices">
+      <ion-icon name="bluetooth" item-start color="dark"></ion-icon>
+      <ion-label>{{ device.name }} <ion-badge>{{ device.rssi }}</ion-badge></ion-label>
+      <button ion-button outline item-end (click)="deviceSelected(device)">Connect</button>
+    </ion-item>
+    </ion-list>
+    
+    
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <p>{{ statusMessage }}</p>
+    </ion-toolbar>
+</ion-footer>

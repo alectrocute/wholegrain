@@ -61,9 +61,13 @@ export class uart {
     public static get delim(): string { return "your_delimiter"; }
 }
 ```
+
 `your_service` is the main service string, eg. `ffe0` (the default).
+
 `your_rxtx_characteristic` is your read/write uart characteristic string, eg. `ffe1` (the default).
+
 `your_delimiter` is the default delimiter string (the string which `deviceStartRX();` watches out for, in case you want to recieving to end early, eg. `//END//` (the default).
+
 
 **Note:** Since wholegrain uses @ionic/native, you will be required to run/test/debug it on a real device.
 
